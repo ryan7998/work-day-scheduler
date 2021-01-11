@@ -64,6 +64,8 @@ for(var i = 0; i<tasks.length; i++){
 
     // get time now and from task list
     var timeNow = moment().format('HH');
+    // to check enter 24h format value in timeNow:
+    //var timeNow = 13;
     var time = moment(tasks[i].time, 'LT').format('HH');
     
     // add red/grey/green bg into list element according to timeleft:
